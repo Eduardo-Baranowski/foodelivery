@@ -119,7 +119,7 @@ const Tabs = () => {
               resizeMode="contain"
               style={{
                 width: 25,
-                heigth: 25,
+                height: 25,
                 tintColor: focused ? COLORS.primary : COLORS.secondary
               }}
             />
@@ -141,7 +141,7 @@ const Tabs = () => {
               resizeMode="contain"
               style={{
                 width: 25,
-                heigth: 25,
+                height: 25,
                 tintColor: focused ? COLORS.primary : COLORS.secondary
               }}
             />
@@ -163,7 +163,7 @@ const Tabs = () => {
               resizeMode="contain"
               style={{
                 width: 25,
-                heigth: 25,
+                height: 25,
                 tintColor: focused ? COLORS.primary : COLORS.secondary
               }}
             />
@@ -185,7 +185,7 @@ const Tabs = () => {
               resizeMode="contain"
               style={{
                 width: 25,
-                heigth: 25,
+                height: 25,
                 tintColor: focused ? COLORS.primary : COLORS.secondary
               }}
             />

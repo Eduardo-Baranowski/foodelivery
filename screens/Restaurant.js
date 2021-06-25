@@ -226,7 +226,7 @@ const Restaurant = ({route, navigation}) => {
                       paddingHorizontal: SIZES.padding*2
                     }}
                   >
-                    <Text style={{marinVertical: 10, textAlign: 'center', ...FONTS.h2}}>{item.name} - {item.price.toFixed(2)}</Text>
+                    <Text style={{marginVertical: 10, textAlign: 'center', ...FONTS.h2}}>{item.name} - {item.price.toFixed(2)}</Text>
                     <Text style={{...FONTS.body3}}>{item.description}</Text>
 
                   </View>
@@ -292,7 +292,7 @@ const Restaurant = ({route, navigation}) => {
                 opacity ={opacity}
                   style={{
                     borderRadius: SIZES.radius,
-                    marinHorizontal: 6,
+                    marginHorizontal: 6,
                     width: dotSize,
                     height: dotSize,
                     backgroundColor: dotColor
@@ -382,6 +382,10 @@ const Restaurant = ({route, navigation}) => {
                   alignItems: 'center',
                   borderRadius: SIZES.radius
                 }}
+                onPress={()=> navigation.navigate("OrderDelivery", {
+                  restaurant: restaurant,
+                  currentLocation:currentLocation
+                })}
               >
                 <Text style={{color: COLORS.white, ...FONTS.h2}}>Order</Text>
               </TouchableOpacity>
